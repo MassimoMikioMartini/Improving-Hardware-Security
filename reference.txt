@@ -1,0 +1,59 @@
+c432:
+
+for /l %i in (0,1,9) do (echo iverilog cN432_%i... && iverilog -o cN432_%i_tb.vcd cN432_%i_tb.v cN432_%i.v cN432_%i_hybrid.v)
+
+for /l %i in (0,1,9) do (echo vvp cN432_%i... && vvp cN432_%i_tb.vcd)
+
+c499:
+
+for /l %i in (0,1,9) do (echo iverilog cN499_%i... && iverilog -o cN499_%i_tb.vcd cN499_%i_tb.v cN499_%i.v cN499_%i_hybrid.v)
+
+for /l %i in (0,1,9) do (echo vvp cN499_%i... && vvp cN499_%i_tb.vcd)
+
+c880:
+
+for /l %i in (0,1,9) do (echo iverilog cN880_%i... && iverilog -o cN880_%i_tb.vcd cN880_%i_tb.v cN880_%i.v cN880_%i_hybrid.v)
+
+for /l %i in (0,1,9) do (echo vvp cN880_%i... && vvp cN880_%i_tb.vcd)
+
+c1355:
+
+for /l %i in (0,1,9) do (echo iverilog cN1355_%i... && iverilog -o cN1355_%i_tb.vcd cN1355_%i_tb.v cN1355_%i.v cN1355_%i_hybrid.v)
+
+for /l %i in (0,1,9) do (echo vvp cN1355_%i... && vvp cN1355_%i_tb.vcd)
+
+c1908:
+
+for /l %i in (0,1,9) do (echo iverilog cN1908_%i... && iverilog -o cN1908_%i_tb.vcd cN1908_%i_tb.v cN1908_%i.v cN1908_%i_hybrid.v)
+
+for /l %i in (0,1,9) do (echo vvp cN1908_%i... && vvp cN1908_%i_tb.vcd)
+
+c2670:
+
+for /l %i in (0,1,9) do (echo iverilog cN2670_%i... && iverilog -o cN2670_%i_tb.vcd cN2670_%i_tb.v cN2670_%i.v cN2670_%i_hybrid.v)
+
+for /l %i in (0,1,9) do (echo vvp cN2670_%i... && vvp cN2670_%i_tb.vcd)
+
+c3540:
+
+for /l %i in (0,1,9) do (echo iverilog cN3540_%i... && iverilog -o cN3540_%i_tb.vcd cN3540_%i_tb.v cN3540_%i.v cN3540_%i_hybrid.v)
+
+for /l %i in (0,1,9) do (echo vvp cN3540_%i... && vvp cN3540_%i_tb.vcd)
+
+c5315:
+
+for /l %i in (0,1,9) do (echo iverilog cN5315_%i... && iverilog -o cN5315_%i_tb.vcd cN5315_%i_tb.v cN5315_%i.v cN5315_%i_hybrid.v)
+
+for /l %i in (0,1,9) do (echo vvp cN5315_%i... && vvp cN5315_%i_tb.vcd)
+
+c6288:
+
+for /l %i in (0,1,9) do (echo iverilog cN6288_%i... && iverilog -o cN6288_%i_tb.vcd cN6288_%i_tb.v cN6288_%i.v cN6288_%i_hybrid.v)
+
+for /l %i in (0,1,9) do (echo vvp cN6288_%i... && vvp cN6288_%i_tb.vcd)
+
+c7552:
+
+for /l %i in (0,1,9) do (echo iverilog cN7552_%i... && iverilog -o cN7552_%i_tb.vcd cN7552_%i_tb.v cN7552_%i.v cN7552_%i_hybrid.v)
+
+for /l %i in (0,1,9) do (echo vvp cN7552_%i... && vvp cN7552_%i_tb.vcd)

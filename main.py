@@ -1,15 +1,15 @@
-import signal_selection
-import key_distribution
-import replacement
+import probability_selection as p
+import hybridshielding as h
 
-netlist = "c880.v"
-
-G, primary_inputs, primary_outputs = signal_selection.build_graph(netlist)
-selected_gates = signal_selection.select_gates(G, primary_outputs, n=45)
-
-signal_selection.visualize_graph(G, selected_gates, primary_inputs, primary_outputs)
-
-s1, s2, s3 = key_distribution.distribute_keys(k=60, l=16, n=45) # k = 60 from Hybrid Shielding; GSHE = 16 functions (l)
-
-replacement.replace(netlist, "GSHE", "output_GSHE.v")
-replacement.replace(netlist, "DWM", "output_DWM.v")
+i = 0
+while i < 10:
+    netlist = "cN6288.bench"
+    percent = 50
+    t = "gshe"
+    m = "random"
+    name = t + "_" + str(percent) + "_" + m + "_" + str(i) + "_" + netlist
+    selected_gates = p.select_gates(netlist, m)
+    inputs = (p.parse(netlist))[0]
+    outputs = (p.parse(netlist))[1]
+    h.replace(netlist, selected_gates, t, name, inputs, outputs, percent)
+    i += 1

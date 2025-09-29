@@ -35,6 +35,7 @@ def make(line, n, inputs):
     and7 = "and7_%d = AND(i7_%d, %s, %s, %s)" % (n, n, keys[0], keys[1], keys[2])
 
     output = "%s = OR(and0_%d, and1_%d, and2_%d, and3_%d, and4_%d, and6_%d, and7_%d)" % (total_output, n, n, n, n, n, n, n)
+    srb = "srb%d = XNOR(%s, keyinput%d)" % (n, total_output, n + 135)
     
     endlist.append(notk1)
     endlist.append(notk2)
@@ -54,5 +55,6 @@ def make(line, n, inputs):
     endlist.append(and6)
     endlist.append(and7)
     endlist.append(output)
+    endlist.append(srb)
 
     return endlist
